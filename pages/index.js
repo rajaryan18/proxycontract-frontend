@@ -21,7 +21,7 @@ export default function Home() {
             <button className='text-lg border-2 mx-5 rounded-full border-black p-2 w-9 h-9 md:mt-1 lg:mt-2'><BsMoonStarsFill /></button>
           </div>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-col-reverse md:flex-row'>
           <Contracts />
           <Profile />
         </div>

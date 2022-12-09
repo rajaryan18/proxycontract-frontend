@@ -19,3 +19,18 @@ body::-webkit-scrollbar { width: 0rem; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.slide-down {
+  animation-name: down;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes down {
+  from {
+    height: 0;
+  } to {
+    height: fit-content;
+  }
+}

@@ -1,6 +1,6 @@
 export default function Contract({ id, name, endpoint, logs }) {
     return (
-        <div className={`py-5 bg-white max-h-screen md:w-2/3 md:relative`}>
+        <div className={`my-8 py-5 bg-white max-h-screen md:px-5 md:relative md:border-2 md:rounded-md`}>
             <h3 className="text-center font-bold text-2xl">{name}</h3>
             <p className="flex flex-row w-fit mx-auto my-2"><section className="text-green-500 font-semibold mr-2">Access Address </section>{endpoint}</p>
             <div>
