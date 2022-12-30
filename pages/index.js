@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import Contracts from '../components/Contracts';
 import Profile from '../components/Profile';
-
 import { BsMoonStarsFill } from 'react-icons/bs';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    fetch('/api/p').then((res) => res.json()).then((data) => console.log(data)).catch((err) => console.log(err));
+  })
   return (
     <div>
       <Head>
